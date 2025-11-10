@@ -18,14 +18,12 @@ function getHumanChoice(){
 }
 
 
-
-
 function playGame(){
 
     let humanScore = 0;
     let computerScore = 0;
     
-    function playRound(humanChoice, computerChoice){
+function playRound(humanChoice, computerChoice){
 
     console.log(`HumanChoice: ${humanChoice}`);
     console.log(`ComputerChoice: ${computerChoice}`);
@@ -49,12 +47,9 @@ function playGame(){
     }
 }
 
-
 playRound(getHumanChoice(), getComputerChoice());
 
-
 }
-
 
 for(let i = 0; i < 5; i++){
     playGame()
