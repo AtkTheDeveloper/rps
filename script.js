@@ -21,7 +21,7 @@ function getHumanChoice(){
 
 
 function playGame(){
-    
+
     let humanScore = 0;
     let computerScore = 0;
     
@@ -47,16 +47,14 @@ function playGame(){
         computerScore = computerScore + 1;
         console.log(computerScore);
     }
+}
+
+
+playRound(getHumanChoice(), getComputerChoice());
 
 
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-playRound(humanSelection, computerSelection);
-
-}
 
 for(let i = 0; i < 5; i++){
     playGame()
