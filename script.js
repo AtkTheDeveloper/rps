@@ -52,9 +52,12 @@ function playGame() {
     if (humanScore > computerScore) {
         console.log(`HumanScore: ${humanScore},  ComputerScore: ${computerScore}`)
         console.log(`Human Wins The Game with a score of: ${humanScore}`);
-    } else {
+    } else if(computerScore > humanScore) {
         console.log(`HumanScore: ${humanScore},  ComputerScore: ${computerScore}`)
         console.log(`Computer Wins The Game with a score of: ${computerScore}`);
+    } else {
+        console.log("It's a draw.");
+        console.log(`HumanScore: ${humanScore}, ComputerScore: ${computerScore}`);
     }
 }
 
